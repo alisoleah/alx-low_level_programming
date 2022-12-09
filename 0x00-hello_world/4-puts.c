@@ -13,10 +13,8 @@
 int main(void)                                                                                                          
 
 {  
-char op1[51];
-
-
-strcpy(op1, "Programming is like building a multilingual puzzle");
+char op1[52];
+strcpy(op1, "\"Programming is like building a multilingual puzzle");
 puts(op1);
-	    return (0);                                                                                                 
+return (0);                                                                                                 
 }       
