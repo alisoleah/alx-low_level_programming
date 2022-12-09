@@ -9,7 +9,7 @@
 *
 *
 */
-Int main(void)
+int main(void)
 {
 char op1[52];
 strcpy(op1, "\"Programming is like building a multilingual puzzle");
