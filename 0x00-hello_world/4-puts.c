@@ -3,7 +3,7 @@
 
 /*
 * main - Entry point
-*
+* print using puts
 *
 * Return 0 (Success)
 *
