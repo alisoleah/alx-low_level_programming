@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
+/**
 * main - Entry point
-* print using puts
 *
-* Return 0 (Success)
+* Description: 'print using puts'
 *
-*
+* Return: Always 0 (Success)
 */
 int main(void)
 {

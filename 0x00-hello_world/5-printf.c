@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-/*
-  * main - Entry Point
+/**
+ * main - Entry Point
   *
-  *
+  *Description: 'Using Printf'
   *
   * Return: Always 0 (success)
-  *
-  *
   */
 int main(void)
 {
