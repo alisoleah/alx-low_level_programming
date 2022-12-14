@@ -10,6 +10,6 @@
 int print_last_digit(int x)
 {
 int result;
-resilt = x % 10;
+result = x % 10;
 return (result);
 }
