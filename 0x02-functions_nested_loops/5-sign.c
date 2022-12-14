@@ -3,14 +3,25 @@
 #include "main.h"
 
 /**
-* _islower - to print q for lower 0 for upeer case
-*@c: input
-* Return: Always 0 (Success)
+* print_sign - to print sign og number
+*@n: input
+* Return: 1 if postive number 0 if zero, -1 if negative number
 */
-int _islower(int c)
+int print_sign(int n)
 {
-if (c >= 'a' && c <= 'z')
+if (n > 0)
+{
+_putchar ('+');
 return (1);
-else
+}
+else if (n == 0)
+{
+_putchar ('0');
 return (0);
+}
+else
+{
+_putchar ('-');
+return (-1);
+}
 }
