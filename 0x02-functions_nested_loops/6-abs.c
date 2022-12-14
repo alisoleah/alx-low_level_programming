@@ -3,14 +3,11 @@
 #include "main.h"
 
 /**
-* _islower - to print q for lower 0 for upeer case
+*_abs - to print absolute value for 
 *@c: input
-* Return: Always 0 (Success)
+* Return: absolute value
 */
-int _islower(int c)
+int _abs(int c)
 {
-if (c >= 'a' && c <= 'z')
-return (1);
-else
-return (0);
+return ((unsigned int)((c < 0) ? -c : c));
 }
