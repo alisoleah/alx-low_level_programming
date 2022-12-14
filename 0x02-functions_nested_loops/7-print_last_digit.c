@@ -3,14 +3,13 @@
 #include "main.h"
 
 /**
-* _islower - to print q for lower 0 for upeer case
-*@c: input
-* Return: Always 0 (Success)
+* print_last_digit- to print last digit
+*@x: input
+* Return: last digit
 */
-int _islower(int c)
+int print_last_digit(int x)
 {
-if (c >= 'a' && c <= 'z')
-return (1);
-else
-return (0);
+int result;
+resilt = x % 10;
+return (result);
 }
