@@ -10,6 +10,12 @@
 */
 int main(void)
 {
-putchar();
-return (0);
+char *str = "putchar";
+while (*str)
+{
+_putchar(*str);
+str++;
+}
+_putchar("\n");
+return(0);
 }
