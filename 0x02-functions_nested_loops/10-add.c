@@ -8,7 +8,7 @@
 *@b: input number
 * Return: a + b
 */
-int add(int a, imt b)
+int add(int a, int b)
 {
 return (a + b);
 }

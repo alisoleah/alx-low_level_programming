@@ -3,14 +3,33 @@
 #include "main.h"
 
 /**
-* _islower - to print q for lower 0 for upeer case
+* print_to_98 - to print numbers from n to 98
 *@c: input
 * Return: Always 0 (Success)
 */
-int _islower(int c)
+void print_to_98(int c)
 {
-if (c >= 'a' && c <= 'z')
-return (1);
+if (c < 98)
+{
+while (c <= 98)
+{
+printf("%d", c);
+if (c != 98)
+printf(", ");
+c++;
+}
+}
+else if (c >= 98)
+{
+while (c >= 98)
+{
+printf("%d", c);
+if (c != 98)
+printf(", ");
+c--;
+}
+}
 else
-return (0);
+printf("98")'
+printf("\n");
 }
