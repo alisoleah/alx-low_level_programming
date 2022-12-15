@@ -15,7 +15,7 @@ for (row = 0; row <= 9; row++)
 _putchar('0');
 _putchar(',');
 _putchar(' ');
-for (col = 1; col <= 0, col++)
+for (col = 1; col <= 0; col++)
 {
 temp = row * col;
 if ((temp / 10) > 0)
