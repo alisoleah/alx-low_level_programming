@@ -17,7 +17,7 @@ _putchar(',');
 _putchar(' ');
 for (col = 1; col <= 0; col++)
 {
-temp = row * col;
+temp = (row * col);
 if ((temp / 10) > 0)
 {
 _putchar((temp / 10) + '0');

@@ -3,14 +3,12 @@
 #include "main.h"
 
 /**
-* _islower - to print q for lower 0 for upeer case
-*@c: input
-* Return: Always 0 (Success)
+* add - additon of two numbers
+*@a: input nmber
+*@b: input number
+* Return: a + b
 */
-int _islower(int c)
+int add(int a, imt b)
 {
-if (c >= 'a' && c <= 'z')
-return (1);
-else
-return (0);
+return (a + b);
 }
