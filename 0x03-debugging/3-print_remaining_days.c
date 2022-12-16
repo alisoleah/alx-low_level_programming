@@ -1,38 +1,38 @@
 #include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
-* times_table - to print 9 times table
 *
-* Return: times table
+* print_remaining_days - takes a date and prints how many days are
+* left in the year, taking leap years into account
+* @month: month in number format
+* @day: day of month
+* @year: year
+* Return: void
 */
-void times_table(void)
+
+void print_remaining_days(int month, int day, int year)
 {
-int row, col, temp;
-for (row = 0; row <= 9; row++)
+if ((year % 4 == 0 || year % 400 == 0) || year % 100 != 0))
 {
-_putchar('0');
-_putchar(',');
-_putchar(' ');
-for (col = 1; col <= 9; col++)
+if (month >= 3 && day >= 60)
 {
-temp = (row * col);
-if ((temp / 10) > 0)
-{
-_putchar((temp / 10) + '0');
+day++;
+}
+
+printf("Day of the year: %d\n", day);
+printf("Remaining days: %d\n", 366 - day);
 }
 else
 {
-_putchar(' ');
-}
-_putchar((temp % 10) + '0');
-if (col < 9)
+if (month == 2 && day == 60)
 {
-_putchar(',');
-_putchar(' ');
+printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
 }
+else
+{
+printf("Day of the year: %d\n", day);
+printf("Remaining days: %d\n", 365 - day);
 }
-_putchar('\n');
 }
 }
