@@ -1,38 +1,29 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
-* times_table - to print 9 times table
-*
-* Return: times table
+* largest_number - returns the largest of 3 numbers
+*@a: first integer
+*@b: second integer
+*@c: third integer
+*Return: largest number 
 */
-void times_table(void)
+
+int largest_number(int a, int b, int c)
 {
-int row, col, temp;
-for (row = 0; row <= 9; row++)
+int largest;
+
+if (a >= b && a >= c)
 {
-_putchar('0');
-_putchar(',');
-_putchar(' ');
-for (col = 1; col <= 9; col++)
-{
-temp = (row * col);
-if ((temp / 10) > 0)
-{
-_putchar((temp / 10) + '0');
+largest = a;
 }
-else
+else if (b >= a && b >= c)
 {
-_putchar(' ');
+largest = b;
 }
-_putchar((temp % 10) + '0');
-if (col < 9)
+else 
 {
-_putchar(',');
-_putchar(' ');
+largest = c;
 }
-}
-_putchar('\n');
-}
+
+return (largest);
 }
