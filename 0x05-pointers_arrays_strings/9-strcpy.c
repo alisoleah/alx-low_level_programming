@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdio>
 
 /**
  * print_array -print oint array
