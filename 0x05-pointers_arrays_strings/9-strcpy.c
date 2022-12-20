@@ -1,21 +1,20 @@
 #include "main.h"
-#include <stdio>
+#include <stdio.h>
 
 /**
- * print_array -print oint array
- *@a: pointer
- *@n: number of elemenets
- *Return: void
+ *_strcpy - string copy
+ *@dest: pointer destination value
+ *@src: pointer source value
+ *Return: character pointer to destination
  */
-void print_array(int *a, int n)
+char *_strcpy(char *dest, char *src)
 {
 	int i;
 
-	for (i = 0; i < n; i++)
+	while (src[i] != '\0')
 	{
-		printf("%d", a[i]);
-		if (i != (n - 1))
-			printf(", ");
+		dest[i] = src[i];
+		i++;
 	}
-	_printf('\n');
+	return (dest);
 }
