@@ -1,30 +1,19 @@
 #include "main.h"
 
 /**
- * _strncpy - int concatinate
- *@dest: pointer char 1
- *@src:pointer char 2
- *@n: size of int
+ * _strcmp - int concatinate
+ *@s1: pointer char 1
+ *@s2:pointer char 2
  *
  *Return: full int
  */
-char *_strncpy(char *dest, char *src, int n);
+int _strcmp(char *s1, char *s2)
 {
-	int i, j;
-
-	i = 0;
-	j = 0;
-
-	while (src[i] != '\0')
+	while (*s1 && *s2 && *s1 == *s2)
 	{
-		i++;
-		j++;
+		s1++;
+		s2++;
 	}
-	for (i = 0; src[i] && i < n; i++
-		dest[i] = src[j];
-
-	for (i = j; i < n ; i++)
-		dest[i] = '\0';
-	return (dest);
+	return (*s1 - *s2);
 
 }
