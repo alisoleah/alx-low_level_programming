@@ -1,28 +1,30 @@
 #include "main.h"
 
 /**
- * _strncat - int concatinate
+ * _strncpy - int concatinate
  *@dest: pointer char 1
  *@src:pointer char 2
  *@n: size of int
  *
- *Return: full string
+ *Return: full int
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n);
 {
 	int i, j;
 
 	i = 0;
 	j = 0;
 
-	while (dest[i] != '\0')
-		i++;
-	while (src[j] != '\0' && j < n)
+	while (src[i] != '\0')
 	{
-		dest[i] = src[j];
 		i++;
 		j++;
 	}
+	for (i = 0; src[i] && i < n; i++
+		dest[i] = src[j];
+
+	for (i = j; i < n ; i++)
+		dest[i] = '\0';
 	return (dest);
 
 }
