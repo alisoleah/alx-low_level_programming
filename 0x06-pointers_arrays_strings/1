@@ -2,7 +2,8 @@
 
 /**
  * reverse_array - reverse array 
- *@a: pointer char 1
+ *@dest: pointer char 1
+ *@src:pointer char 2
  *@n: size of int
  *
  *Return: full int
